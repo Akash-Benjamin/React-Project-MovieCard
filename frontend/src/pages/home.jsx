@@ -28,7 +28,7 @@ return (
      <button className ="search-button " type="submit">search</button>
   </form>
     <div className="movies-grid">
-        {movies.map((movie)=>( <MovieCard movie={movie} key={movie.id}/> )
+        {movies.map((movie)=>( <MovieCard movie={movie} key={movie.id}/>  )
       )}
     </div>c
 </div>
