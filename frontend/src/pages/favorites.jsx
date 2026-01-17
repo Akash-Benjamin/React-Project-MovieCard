@@ -1,4 +1,4 @@
-
+import "../css/Favorites.css";
 
 function Favorites(){
     return <div className="favorites-empty">
@@ -7,4 +7,4 @@ function Favorites(){
     </div>
 }
 
-export default Favorites
+export default Favorites    
