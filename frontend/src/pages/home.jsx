@@ -1,7 +1,7 @@
 import MovieCard from "../components/MovieCard";
 import "../css/Home.css";
-import { useState } from "react";
-
+import { useState, useEffect} from "react";
+import {searchmovies, getPopularMovies} from ".../services/api"
 
 function Home(){
   const [searchQuery, setSearchQuery] = useState("");
@@ -32,7 +32,7 @@ return (
     <div className="movies-grid">
         {movies.map((movie)=>( <MovieCard movie={movie} key={movie.id}/>  )
       )}
-    </div>c
+    </div>
 </div>
 );
 }
